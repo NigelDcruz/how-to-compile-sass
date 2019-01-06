@@ -49,3 +49,11 @@ But hold on, what about the other files that were created?
 3- *.sass-cache* directory (This folder mostly exists to speed up compilation)
 
 In General you don't need to worry about about them. Just know that they are quite useful when it comes to debugging your code.
+
+## --watch flag in sass
+Now that you know how to compile a SASS/SCSS file, you should know that we don't need to run the compilation command every time we make changes to our scss file. With the help of the **--watch** flag, we can watch individual files or directories for any changes made to our SCSS files *until we stop the process*.
+
+The watch flag basically tells Sass to watch your source files for changes, and **re-compile CSS each time you save your Sass**. If you wanted to watch your style.scss file, you'd just add the watch flag to your compilation command, like so:
+```
+sass --watch style.scss:style.css
+```
