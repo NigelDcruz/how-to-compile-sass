@@ -1,8 +1,8 @@
 # Guide to create and Compile your first SASS/SCSS file
 
-## Create youe very own scss file.
-Before we do that, it's good to note that browsers can't understand scss. In order for your browser to understand the code you write in your scss file, you need to compile it to plain css. Incase you feel that this is extra work, don't worry. You can easily automate it using task runners like [Gulp](https://gulpjs.com/).
-For now, since we're learning the basics, it's good to do it the "time consuming way", so that when you actually [automate](https://css-tricks.com/gulp-for-beginners/), you'll
+## Create your very own scss file.
+Before we do that, it's good to note that browsers can't understand scss. In order for your browser to understand the code you write in your scss file, you need to compile it to plain css. In case you feel that this is extra work, don't worry. You can easily automate it using task runners like [Gulp](https://gulpjs.com/).
+For now, since we're learning the basics, it's good to do it the "time-consuming way", so that when you actually [automate](https://css-tricks.com/gulp-for-beginners/), you'll
 know what's going on under the hood.
 
 Let's start with 
@@ -48,7 +48,7 @@ But hold on, what about the other files that were created?
 
 3- *.sass-cache* directory (This folder mostly exists to speed up compilation)
 
-In General you don't need to worry about about them. Just know that they are quite useful when it comes to debugging your code.
+In general, you don't need to worry about them. Just know that they are quite useful when it comes to debugging your code.
 
 ## --watch flag in sass
 Now that you know how to compile a SASS/SCSS file, you should know that we don't need to run the compilation command every time we make changes to our scss file. With the help of the **--watch** flag, we can watch individual files or directories for any changes made to our SCSS files *until we stop the process*.
@@ -57,7 +57,7 @@ The watch flag basically tells Sass to watch your source files for changes, and 
 ```
 sass --watch style.scss:style.css
 ```
-**In a real world scenario** where you have multiple/seperate scss files for different components (eg: header.scss, slider.scss, main.scss, footer.scss) you normally watch the folder that contains these files.
+**In a real-world scenario** where you have multiple/separate scss files for different components (eg: header.scss, slider.scss, main.scss, footer.scss) you normally watch the folder that contains these files.
 For example, if you have a folder named SASS which contains all your .scss files (eg: theme/sass)
 ```
 sass --watch theme/sass:public/stylesheets
