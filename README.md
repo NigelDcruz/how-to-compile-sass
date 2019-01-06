@@ -57,3 +57,9 @@ The watch flag basically tells Sass to watch your source files for changes, and 
 ```
 sass --watch style.scss:style.css
 ```
+**In a real world scenario** where you have multiple/seperate scss files for different components (eg: header.scss, slider.scss, main.scss, footer.scss) you normally watch the folder that contains these files.
+For example, if you have a folder named SASS which contains all your .scss files (eg: theme/sass)
+```
+sass --watch theme/sass:public/stylesheets
+```
+Sass would watch all files in the theme/sass folder for changes, and compile CSS to the public/stylesheets folder.
